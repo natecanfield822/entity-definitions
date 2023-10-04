@@ -7,37 +7,7 @@ synthesis:
       encodeIdentifierInGUID: true
       conditions:
         - attribute: eventType
-          value: LlmCompletion
-      tags:
-          providerAccountId:
-          providerAccountName:
-          instrumentation.provider:
-    - identifier: applicationName
-      name: applicationName
-      encodeIdentifierInGUID: true
-      conditions:
-        - attribute: eventType
-          value: LlmChatCompletionSummary
-      tags:
-          providerAccountId:
-          providerAccountName:
-          instrumentation.provider:
-    - identifier: applicationName
-      name: applicationName
-      encodeIdentifierInGUID: true
-      conditions:
-        - attribute: eventType
-          value: LlmChatCompletionMessage
-      tags:
-          providerAccountId:
-          providerAccountName:
-          instrumentation.provider:
-    - identifier: applicationName
-      name: applicationName
-      encodeIdentifierInGUID: true
-      conditions:
-        - attribute: eventType
-          value: LlmEmbedding
+          prefix: "Llm"
       tags:
           providerAccountId:
           providerAccountName:
